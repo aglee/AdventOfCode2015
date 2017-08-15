@@ -1,5 +1,9 @@
 import java.util.*;
 
+/*
+I found the gaming terminology unfamiliar and confusing.  It helped to think of "hit" points as "life" (thus you're dead if it goes to zero) and "damage" points roughly as "firepower" (ability to *inflict* damage, which can be offset by defensive "armor" points).
+*/
+
 class Player {
 	String name;
 	int hitPoints;
@@ -194,7 +198,11 @@ class Game {
 class Challenge {
 	public static void main(String[] args) {
 //		doExampleTest();
-//		doPartOne();
+		System.out.println("-- PART 1 --");
+		doPartOne();
+		System.out.println();
+		
+		System.out.println("-- PART 2 --");
 		doPartTwo();
 	}
 	
