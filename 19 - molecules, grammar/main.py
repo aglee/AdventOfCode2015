@@ -1,7 +1,8 @@
 import inspect
 import os
 import re
-import Queue
+
+# THIS VERSION WORKS FOR PART 1.  USES TUPLE OF ATOMS TO REPRESENT MOLECULE.
 
 def get_input_lines(file_name = "input.txt"):
 	file_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -47,8 +48,8 @@ lines = get_input_lines()
 machine = Machine(lines)
 machine.dump_rules()
 molecule = machine.split_into_atoms(lines[-1])
-#print(molecule)
-print(len(machine.possible_productions(molecule)))
+print('The input molecule has {} atoms.'.format(len(molecule)))
+print('Part 1: There are {} distinct possible results of applying one production rule to the input molecule.'.format(len(machine.possible_productions(molecule))))
 
 
 
