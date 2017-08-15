@@ -1,1 +1,4 @@
 *.class
+*.dSYM
+*.swp
+*.pyc
